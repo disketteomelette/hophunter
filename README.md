@@ -1,5 +1,5 @@
 # hophunter
-A script that tries to detect an internal IP on the second hop of a traceroute, tests connectivity after setting the found IP as gateway, and returns if your gateway is cheating you.
+A script that tries to detect an internal IP on the second hop of a traceroute, tests connectivity after setting the found IP as gateway, returns if your gateway is cheating you and "hops" the fake gateway.
 
 hophunter detects potential issues with gateway redirection. It analyzes traceroute results to identify internal IPs on the second hop, then tests connectivity after setting the identified IP as the gateway. This helps ensure that your gateway is not maliciously redirecting traffic.
 

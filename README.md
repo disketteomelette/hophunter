@@ -9,6 +9,10 @@ In other public networks, I've also noticed (especially by the page loading time
 
 The script analyzes the network route using traceroute, identifies potential malicious redirections at the second hop, and verifies connectivity after establishing a new gateway, enabling the detection and mitigation of possible MITM attacks, captive portals, and unwanted firewalls.
 
+### Note
+
+It is entirely possible that with a well-configured network, the chances of hophunter operating reduce to zero. However, there are many poorly configured networks out there. Keep in mind that this is an update of an old program and may not always work.
+
 ### Features:
 - Detects internal IPs on the second hop of traceroute.
 - Tests connectivity after setting the identified IP as the gateway.

@@ -95,4 +95,4 @@ def change_gateway(new_gateway):
 if __name__ == "__main__":
     print("hophunter v.1.0 - github.com/disketteomelette")
     print("creative commons -- attribution, ok to derivatives, included commercial use")
-    traceroute('jcrueda.es')
+    traceroute('google.com')

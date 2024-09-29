@@ -3,10 +3,6 @@ A script that tries to detect an internal IP on the second hop of a traceroute, 
 
 hophunter detects potential issues with gateway redirection. It analyzes traceroute results to identify internal IPs on the second hop, then tests connectivity after setting the identified IP as the gateway. This helps ensure that your gateway is not maliciously redirecting traffic.
 
-In my early days, when I connected to the library internet, I couldn't access many websites because of a firewall. Interestingly, it was a physical Fortinet firewall that was being redirected to as the supposed gateway. Doing a traceroute, I noticed that the second hop after the supposed gateway was 192.168.1.1. I tried manually setting the gateway to this address, and it completely bypassed the firewall control.
-
-In other public networks, I've also noticed (especially by the page loading times) that a local MITM was taking place. With this tool, similarly, you can bypass the attacking device and connect directly to the gateway.
-
 The script analyzes the network route using traceroute, identifies potential malicious redirections at the second hop, and verifies connectivity after establishing a new gateway, enabling the detection and mitigation of possible MITM attacks, captive portals, and unwanted firewalls.
 
 ### Note
